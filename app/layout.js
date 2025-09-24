@@ -1,4 +1,4 @@
-import { Geist, Geist_Mono , Open_Sans } from "next/font/google";
+import { Geist, Geist_Mono , Oswald ,Oswald} from "next/font/google";
 import "./globals.css";
 import LenisProvider from "./LenisProvider";
 
@@ -12,10 +12,10 @@ const geistMono = Geist_Mono({
   subsets: ["latin"],
 });
 
-const Open_San = Open_Sans({
-  variable: "--font-Open_Sans",
+const wald = Oswald({
+  variable: "--font-Oswald",
   subsets: ["latin"],
-  weight: ["400" , "500", "700" , "800"], 
+  weight: ["400","500","600","700"], 
 });
 
 export const metadata = {
@@ -27,7 +27,7 @@ export default function RootLayout({ children }) {
   return (
     <html lang="en">
       <body
-        className={`${geistSans.variable} ${geistMono.variable} ${Open_San.variable} antialiased`}
+        className={`${geistSans.variable} ${geistMono.variable} ${wald.variable} antialiased`}
         data-new-gr-c-s-check-loaded="14.1254.0"
         data-gr-ext-installed=""
         cz-shortcut-listen="true"
